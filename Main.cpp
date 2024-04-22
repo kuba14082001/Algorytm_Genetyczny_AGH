@@ -1,10 +1,13 @@
 #include <iostream>
-
+#include <cstdlib> //srand
+#include <time.h>
 #include "TParam.h"
 
 using namespace std;
 int main()
 {
+    srand(time(0));
+    
     TParam param1{1,4,1,2};
     TParam param2{10,20,3};
     TParam param3{0,10,0.5,3.3};
